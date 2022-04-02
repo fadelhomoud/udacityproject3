@@ -66,7 +66,7 @@ class PostBody(BaseModel):
                 'occupation': 'Other-service',
                 'relationship': 'Not-in-family',
                 'race': 'White',
-                'sex': 'Female',
+                'sex': 'Male',
                 'capital-gain': 100000,
                 'capital-loss': 5000,
                 'hours-per-week': 45,
