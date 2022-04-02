@@ -10,6 +10,7 @@ import subprocess
 
 if "DYNO" in os.environ and os.path.isdir(".dvc"):
     os.system("dvc config core.no_scm true")
+    os.system("dvc remote add -df s3remote s3://fadelmlops")
     dvc_output = subprocess.run(["dvc", "pull"], capture_output=True, text=True)
     print(dvc_output.stdout)
     print(dvc_output.stderr)
@@ -22,7 +23,6 @@ categorical_features = os.environ['CATEGORICAL_FEATURES'].split(',')
 model_path = os.environ['MODEL_PATH']
 encoder_path = os.environ['ONEHOT_ENCODER_PATH']
 lb_path = os.environ['LABEL_ENCODER']
-
 
 # Loading model and encoders:
 with open(model_path, "rb") as file:
