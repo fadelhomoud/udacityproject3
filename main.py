@@ -16,7 +16,7 @@ if "DYNO" in os.environ and os.path.isdir(".dvc"):
     print(dvc_output.stderr)
     if dvc_output.returncode != 0:
         print("dvc pull failed")
-    os.system("rm -r .dvc .apt/usr/lib/dvc")
+   # os.system("rm -r .dvc .apt/usr/lib/dvc")
 
 load_dotenv()
 categorical_features = os.environ['CATEGORICAL_FEATURES'].split(',')
