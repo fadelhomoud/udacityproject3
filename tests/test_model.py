@@ -2,7 +2,7 @@
 import pandas as pd
 import numpy as np
 import pytest
-from ml.model import train_model, compute_model_metrics, inference, slice_performance
+from model import train_model, compute_model_metrics, inference, slice_performance
 
 
 @pytest.fixture
