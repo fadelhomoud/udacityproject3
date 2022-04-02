@@ -32,6 +32,9 @@ with open(encoder_path, "rb") as file:
 with open(lb_path, "rb") as file:
     lb = pickle.load(file)
 
+app = FastAPI()
+
+
 class PostBody(BaseModel):
 
     age: int
