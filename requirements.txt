@@ -6,4 +6,7 @@ requests
 fastapi==0.63.0
 uvicorn
 gunicorn
+dvc[s3]
+dvc
+pydantic
 python-dotenv
