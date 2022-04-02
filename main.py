@@ -1,4 +1,3 @@
-# Put the code for your API here.
 
 import pickle
 import os
