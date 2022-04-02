@@ -6,7 +6,7 @@ from pydantic import BaseModel, Field
 import pandas as pd
 from ml.data import process_data
 from dotenv import load_dotenv
-
+import subprocess
 
 if "DYNO" in os.environ and os.path.isdir(".dvc"):
     os.system("dvc config core.no_scm true")
